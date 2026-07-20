@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ring Size Finder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <section id="welcome" class="screen active">
+    <h1>💍 Ring Size Finder</h1>
+    <p>Find your approximate US ring size.</p>
+    <button id="beginBtn">Begin</button>
+  </section>
+
+  <section id="calibration" class="screen">
+    <h2>Screen Calibration</h2>
+    <p>Use a standard credit card to match the rectangle.</p>
+    <div id="cardBox"></div>
+    <input type="range" id="cardSlider" min="70" max="120" value="86">
+    <button id="continueBtn">Continue</button>
+  </section>
+
+  <section id="sizer" class="screen">
+    <h2>Adjust the Ring</h2>
+
+    <div id="ringContainer">
+      <div id="ring"></div>
+    </div>
+
+    <h3>US Size <span id="sizeLabel">7.0</span></h3>
+    <p>Diameter: <span id="diameterLabel">17.3</span> mm</p>
+    <p>Circumference: <span id="circumferenceLabel">54.4</span> mm</p>
+
+    <input
+      id="ringSlider"
+      type="range"
+      min="3"
+      max="15"
+      step="0.1"
+      value="7">
+
+    <button id="doneBtn">I'm Done</button>
+  </section>
+
+  <section id="results" class="screen">
+    <h1>🎉 You're Finished!</h1>
+    <h2>Your Ring Size</h2>
+    <h3 id="finalSize">US 7.0</h3>
+
+    <p id="finalDiameter"></p>
+    <p id="finalCircumference"></p>
+
+    <p><strong>📷 Take a screenshot and send it to the person who requested your ring size.</strong></p>
+
+    <button id="restartBtn">Start Over</button>
+  </section>
+</div>
+
+<script src="sizes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
