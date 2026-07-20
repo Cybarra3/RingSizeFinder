@@ -168,3 +168,250 @@ CALIBRATION SCREEN
     </div>
 
 </section>
+
+<!-- =====================================================
+RING SIZING SCREEN
+====================================================== -->
+
+<section
+    id="sizer"
+    class="screen">
+
+    <div class="ringCard">
+
+        <h2>
+
+            Find Your Ring Size
+
+        </h2>
+
+        <p class="instructions">
+
+            Place your ring directly
+            on the screen.
+
+        </p>
+
+        <p class="instructions">
+
+            Move the slider until the
+            inside of the gold ring
+            perfectly matches the
+            inside of your ring.
+
+        </p>
+
+        <!-- Ring Display -->
+
+        <div id="ringStage">
+
+            <div id="ringGlow"></div>
+
+            <div id="ringShadow"></div>
+
+            <div id="ring">
+
+                <div id="diamondHolder">
+
+                    <img
+                        src="assets/diamond.jpg"
+                        id="diamond"
+                        alt="Diamond">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Size Information -->
+
+        <div id="measurements">
+
+            <div class="measurementBox">
+
+                <span class="measurementTitle">
+
+                    US Size
+
+                </span>
+
+                <span
+                    id="sizeLabel"
+                    class="measurementValue">
+
+                    7.0
+
+                </span>
+
+            </div>
+
+            <div class="measurementBox">
+
+                <span class="measurementTitle">
+
+                    Inside Diameter
+
+                </span>
+
+                <span
+                    id="diameterLabel"
+                    class="measurementValue">
+
+                    17.3 mm
+
+                </span>
+
+            </div>
+
+            <div class="measurementBox">
+
+                <span class="measurementTitle">
+
+                    Circumference
+
+                </span>
+
+                <span
+                    id="circumferenceLabel"
+                    class="measurementValue">
+
+                    54.4 mm
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Slider -->
+
+        <div id="sliderSection">
+
+            <span class="sliderLabel">
+
+                Smaller
+
+            </span>
+
+            <input
+
+                id="ringSlider"
+
+                type="range"
+
+                min="3"
+
+                max="15"
+
+                step="0.1"
+
+                value="7">
+
+            <span class="sliderLabel">
+
+                Larger
+
+            </span>
+
+        </div>
+
+        <!-- Quick Buttons -->
+
+        <div id="quickSizes">
+
+            <button
+                class="quickSize"
+                data-size="5">
+
+                5
+
+            </button>
+
+            <button
+                class="quickSize"
+                data-size="6">
+
+                6
+
+            </button>
+
+            <button
+                class="quickSize"
+                data-size="7">
+
+                7
+
+            </button>
+
+            <button
+                class="quickSize"
+                data-size="8">
+
+                8
+
+            </button>
+
+            <button
+                class="quickSize"
+                data-size="9">
+
+                9
+
+            </button>
+
+            <button
+                class="quickSize"
+                data-size="10">
+
+                10
+
+            </button>
+
+        </div>
+
+        <!-- Accuracy Notice -->
+
+        <div id="accuracyNotice">
+
+            <h3>
+
+                Tips
+
+            </h3>
+
+            <ul>
+
+                <li>
+                    Remove your ring before measuring.
+                </li>
+
+                <li>
+                    Match the inside edge only.
+                </li>
+
+                <li>
+                    Brightness may help visibility.
+                </li>
+
+                <li>
+                    Measure more than once for accuracy.
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Finish Button -->
+
+        <button
+            id="doneBtn"
+            class="goldButton">
+
+            I'm Done
+
+        </button>
+
+    </div>
+
+</section>
