@@ -1,64 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ring Size Finder</title>
-<link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Ring Size Finder</title>
+
+    <meta
+        name="theme-color"
+        content="#111111">
+
+    <meta
+        name="apple-mobile-web-app-capable"
+        content="yes">
+
+    <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
 </head>
+
 <body>
-<div id="app">
-  <section id="welcome" class="screen active">
-    <h1>💍 Ring Size Finder</h1>
-    <p>Find your approximate US ring size.</p>
-    <button id="beginBtn">Begin</button>
-  </section>
 
-  <section id="calibration" class="screen">
-    <h2>Screen Calibration</h2>
-    <p>Use a standard credit card to match the rectangle.</p>
-    <div id="cardBox"></div>
-    <input type="range" id="cardSlider" min="70" max="120" value="86">
-    <button id="continueBtn">Continue</button>
-  </section>
+<div id="backgroundGlow"></div>
 
-  <section id="sizer" class="screen">
-    <h2>Adjust the Ring</h2>
+<div id="sparkles"></div>
 
-    <div id="ringContainer">
-      <div id="ring"></div>
+<main id="app">
+
+<!-- =====================================================
+WELCOME SCREEN
+====================================================== -->
+
+<section
+    id="welcome"
+    class="screen active">
+
+    <div class="hero">
+
+        <img
+            src="assets/logo.jpg"
+            id="logo"
+            alt="Ring Size Finder">
+
+        <h1>
+
+            Ring Size Finder
+
+        </h1>
+
+        <h2>
+
+            Find Your Perfect Fit
+
+        </h2>
+
+        <p>
+
+            This tool helps estimate your
+            United States ring size.
+
+        </p>
+
+        <img
+            src="assets/diamond.jpg"
+            class="diamondHero"
+            alt="Diamond">
+
+        <button
+            id="beginBtn"
+            class="goldButton">
+
+            Begin
+
+        </button>
+
     </div>
 
-    <h3>US Size <span id="sizeLabel">7.0</span></h3>
-    <p>Diameter: <span id="diameterLabel">17.3</span> mm</p>
-    <p>Circumference: <span id="circumferenceLabel">54.4</span> mm</p>
+</section>
 
-    <input
-      id="ringSlider"
-      type="range"
-      min="3"
-      max="15"
-      step="0.1"
-      value="7">
+<!-- =====================================================
+CALIBRATION SCREEN
+====================================================== -->
 
-    <button id="doneBtn">I'm Done</button>
-  </section>
+<section
+    id="calibration"
+    class="screen">
 
-  <section id="results" class="screen">
-    <h1>🎉 You're Finished!</h1>
-    <h2>Your Ring Size</h2>
-    <h3 id="finalSize">US 7.0</h3>
+    <div class="card">
 
-    <p id="finalDiameter"></p>
-    <p id="finalCircumference"></p>
+        <h2>
 
-    <p><strong>📷 Take a screenshot and send it to the person who requested your ring size.</strong></p>
+            Screen Calibration
 
-    <button id="restartBtn">Start Over</button>
-  </section>
-</div>
+        </h2>
 
-<script src="sizes.js"></script>
-<script src="script.js"></script>
-</body>
-</html>
+        <p>
+
+            Place a standard credit card
+            over the rectangle below.
+
+        </p>
+
+        <p>
+
+            Move the slider until
+            the rectangle matches
+            the exact size
+            of your card.
+
+        </p>
+
+        <div
+            id="cardContainer">
+
+            <div
+                id="cardBox">
+
+            </div>
+
+        </div>
+
+        <input
+
+            id="cardSlider"
+
+            type="range"
+
+            min="70"
+
+            max="110"
+
+            value="86">
+
+        <button
+
+            id="continueBtn"
+
+            class="goldButton">
+
+            Continue
+
+        </button>
+
+    </div>
+
+</section>
